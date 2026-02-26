@@ -1,11 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import VSvg from '@/components/ui/VSvg/VSvg.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <h1>Ui-kit</h1>
+  <h2>Svg</h2>
+  <div>
+    <VSvg class="text-purple-700 hover:text-purple-500" name="outline/instagram" />
+    <VSvg class="text-orange-700 hover:text-orange-500" name="filled/youtube" />
+  </div>
 </template>
 
 <style scoped></style>
