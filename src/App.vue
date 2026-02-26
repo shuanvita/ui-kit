@@ -3,7 +3,7 @@ import VSvg from '@/components/ui/VSvg/VSvg.vue'
 </script>
 
 <template>
-  <h1>Ui-kit</h1>
+  <h1 class="text-xl">Ui-kit</h1>
   <h2>Svg</h2>
   <div>
     <VSvg class="text-purple-700 hover:text-purple-500" name="outline/instagram" />

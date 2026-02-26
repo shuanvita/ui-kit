@@ -7,14 +7,23 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-    vueDevTools(),
-    tailwindcss()
-  ],
+  plugins: [vue(), vueDevTools(), tailwindcss()],
+  build: {
+    lib: {
+      entry: 'src/index.ts',
+      name: 'shuanvita-ui-kit',
+      fileName: 'index',
+    },
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        globals: { vue: 'Vue' },
+      },
+    },
+  },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
 })
