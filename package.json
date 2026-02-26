@@ -1,6 +1,6 @@
 {
   "name": "shuanvita-ui-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "type": "module",
   "description": "Simple Vue 3 UI Kit",
@@ -45,7 +45,6 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.2.1",
-    "tailwindcss": "^4.2.1",
     "@tsconfig/node24": "^24.0.4",
     "@types/jsdom": "^28.0.0",
     "@types/node": "^24.10.13",
@@ -64,8 +63,10 @@
     "oxlint": "~1.50.0",
     "prettier": "3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwindcss": "^4.2.1",
     "typescript": "~5.9.3",
     "vite": "^7.3.1",
+    "vite-plugin-dts": "^4.5.4",
     "vite-plugin-vue-devtools": "^8.0.6",
     "vitest": "^4.0.18",
     "vue-tsc": "^3.2.5"
