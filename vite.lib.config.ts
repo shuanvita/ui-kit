@@ -4,7 +4,14 @@ import { fileURLToPath, URL } from 'node:url'
 import dts from 'vite-plugin-dts'
 
 export default defineConfig({
-  plugins: [vue(), dts({ tsconfigPath: './tsconfig.app.json' })],
+  plugins: [
+    vue(),
+    dts({
+      tsconfigPath: './tsconfig.app.json',
+      outDir: 'dist',
+      rollupTypes: true,
+    }),
+  ],
   publicDir: false,
   resolve: {
     alias: {
