@@ -2,14 +2,14 @@
 import { computed } from 'vue'
 import type { VSvgTypes } from '@/components/ui/VSvg/VSvg.types.ts'
 
-const { name, size, width, height } = defineProps<VSvgTypes>()
+const props = defineProps<VSvgTypes>()
 
 const svgAttrs = computed(() => {
-  if (size !== undefined) return { width: size, height: size }
+  if (props.size !== undefined) return { width: props.size, height: props.size }
 
   return {
-    ...(width !== undefined && { width }),
-    ...(height !== undefined && { height }),
+    ...(props.width !== undefined && { width: props.width }),
+    ...(props.height !== undefined && { height: props.height }),
   }
 })
 </script>
