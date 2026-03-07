@@ -15,9 +15,7 @@ const svgAttrs = computed(() => {
 </script>
 
 <template>
-  <template>
-    <svg v-bind="svgAttrs" role="img" aria-hidden="true">
-      <use :href="`/svg/${name}.svg`" />
-    </svg>
-  </template>
+  <svg v-bind="svgAttrs" role="img" aria-hidden="true">
+    <use :href="`/svg/${name}.svg`" />
+  </svg>
 </template>
