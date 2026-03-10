@@ -9,8 +9,9 @@ import VLink from '@/components/ui/VLink/VLink.vue'
     <div>
       <h2>Svg</h2>
       <div>
-        <VSvg class="text-purple-700 hover:text-purple-500" name="outline/instagram" />
-        <VSvg class="text-orange-700 hover:text-orange-500" name="filled/youtube" />
+        <!--        <VSvg class="text-purple-700 hover:text-purple-500" name="outline/instagram" />-->
+        <VSvg class="text-orange-700 hover:text-orange-500" name="filled/youtube" :size="30" />
+        <VSvg name="home-title" />
       </div>
     </div>
     <div>
